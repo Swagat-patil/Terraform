@@ -7,3 +7,8 @@ variable "project" {
   type    = string
   default = "dev-app"
 }
+
+variable "iam_principals" {
+  description = "IAM users or roles allowed to access OpenSearch"
+  type        = list(string)
+}
